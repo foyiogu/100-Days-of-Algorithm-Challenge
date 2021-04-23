@@ -18,7 +18,7 @@ public class Day1 {
         double ddd = 0.0;
         for (Double dd : list) {
             if (Collections.frequency(list,dd) ==1){
-                ddd= dd;
+                ddd= dd;;
             }
         }
         Arrays.sort(arr);
