@@ -2,6 +2,7 @@ package com.decagon.francis;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class Day2 {
@@ -17,10 +18,10 @@ public class Day2 {
                 .collect(Collectors.joining());
     }
 
-    private static List<String> toChunks(String strng, int sz){
+    private static List<String> toChunks(String strng, int sz) {
         List<String> chunks = new ArrayList<>();
-        for(int i = 0; i+sz<=strng.length(); i+=sz){
-            chunks.add(strng.substring(i,i+sz));
+        for (int i = 0; i + sz <= strng.length(); i += sz) {
+            chunks.add(strng.substring(i, i + sz));
         }
         return chunks;
     }
